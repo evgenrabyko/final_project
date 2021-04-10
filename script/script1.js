@@ -8,13 +8,17 @@ let slider = function(info){
    if(item.length == 0) return;
 
    
+    
+  
+
+   
 
    let prevNext = function(dir, button){
     
     let sliderItem =  item[0],
     ml = sliderItem.style.marginLeft ? Math.abs(parseInt(sliderItem.style.marginLeft)) : 0
      let mlDefault = ml, 
-         step = 100;
+         step = 102;
     let moveSlider = function(){
         ml = ml+1*(dir == 'prev'? -1 : 1);
         sliderItem.style.marginLeft = `-${ml}%`;
